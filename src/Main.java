@@ -4,11 +4,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your name,password ans balance to create an account");
+        System.out.println("Enter your name,password and balance to create an account");
 
         // create user
         String name = sc.nextLine();
-        String password = sc.nextLine();
+        String password = sc.next();
         double balance = sc.nextDouble();
         SBIuser user = new SBIuser(name,balance,password);
 
@@ -20,7 +20,7 @@ public class Main {
         System.out.println("Enter amount you wanna withdraw");
         int money = sc.nextInt();
         System.out.println("Enter your password");
-        String pass = sc.nextLine();
+        String pass = sc.next();
         System.out.println(user.withdrawMoney(money,pass));
 
         //ROI
