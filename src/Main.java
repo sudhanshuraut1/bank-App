@@ -24,6 +24,6 @@ public class Main {
         System.out.println(user.withdrawMoney(money,pass));
 
         //ROI
-        System.out.println(user.calculateInterest(10));
+        System.out.println("the interest for 10 years on"+ user.getBalance()+"Rs will be:"+user.calculateInterest(10));
     }
 }
